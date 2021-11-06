@@ -82,9 +82,8 @@ const main = async () => {
         if (areYou.sure) {
             try {
                 for (const folder of modified.modules) {
-                    resetModule(folder);
+                    await resetModule(folder);
                 }
-
             } catch (unforcedError) {
                 console.error(`${chalk.redBright((unforcedError as Error).message ?? unforcedError)}`);
             }
