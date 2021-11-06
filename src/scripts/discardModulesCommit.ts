@@ -29,7 +29,7 @@ const git: SimpleGit = simpleGit();
 const ARE_YOU_SURE: PromptObject = {
     type: 'confirm',
     name: 'sure',
-    message: 'Are you sure want to discard the changes in all sub modules ?',
+    message: 'Are you sure want to discard the commit and changes in the above sub modules ?',
     initial: false
 };
 
