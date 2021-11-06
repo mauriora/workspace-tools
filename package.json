@@ -12,6 +12,7 @@
     "node": ">=14.0.0"
   },
   "bin": {
+    "discardModulesChanges": "./bin/discardModulesChanges",
     "loadModules": "./bin/loadModules",
     "unloadModules": "./bin/unloadModules"
   },
@@ -36,6 +37,8 @@
     "ts-node": "^10.3.0",
     "typescript": "^4.4.4"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "@types/prompts": "^2.0.14"
+  },
   "peerDependencies": {}
 }
