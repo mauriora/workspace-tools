@@ -13,6 +13,7 @@
   },
   "bin": {
     "discardModulesChanges": "./bin/discardModulesChanges",
+    "discardModulesCommit": "./bin/discardModulesCommit",
     "loadModules": "./bin/loadModules",
     "unloadModules": "./bin/unloadModules"
   },
@@ -38,6 +39,7 @@
     "typescript": "^4.4.4"
   },
   "devDependencies": {
-    "@types/prompts": "^2.0.14"
+    "@types/prompts": "^2.0.14",
+    "simple-git": "^2.47.0"
   }
 }
