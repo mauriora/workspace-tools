@@ -34,7 +34,7 @@ const ARE_YOU_SURE: PromptObject = {
 
 const restoreModules = async () => {
     console.log(`${chalk.yellow('Git submodules restore ...')}`);
-    await git.subModule(["foreach", 'git restore -- .'], (errorOutput, stdOut) => {
+    await git.subModule(["foreach", 'git restore --staged --worktree -- .'], (errorOutput, stdOut) => {
         if (stdOut) {
             console.log(stdOut);
         }
