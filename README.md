@@ -6,18 +6,7 @@ Tools to manage yarn workspace and git modules.
 
 Add this packge as a dependecy to the root workspace:
 
-`package.json`
-
-```package.json
-{ ...
-    "workspaces": [ ...
-    ],
-    "devDependencies": {
-        "@mauriora/workspace-tools": "^0.0.4"
-    }
-}
-
-```
+`yarn add @mauriora/workspace-tools --dev --ignore-workspace-root-check`
 
 and execute the commands there:
 
@@ -29,9 +18,9 @@ PS C:\Users\Me\code\MauriOra\Announcements-Bar-Spfx> yarn loadModules shared/wor
 After (un)loading it will call `yarn install`.
 - `discardModules` ([`Changes`](#discardmoduleschanges)|[`Commit`]($discardmodulescommit)) help for instance when publishing failed.
 
-### loadModules
+### `loadModules`
 
-This (down)loads a module already part of the root workspace.
+(down)loads a module, wich is already part of the root workspace.
 
 ```shell
 yarn loadModules .\shared\Package-Tools\
@@ -43,9 +32,9 @@ or
 yarn loadModules shared/Package-Tools
 ```
 
-### unloadModules
+### `unloadModules`
 
-This empties the working tree of a module already part of the root workspace.
+empties the working tree of a module already part of the root workspace.
 
 ```shell
 yarn unloadModules .\shared\Package-Tools\
@@ -57,17 +46,17 @@ or
 yarn unloadModules shared/Package-Tools
 ```
 
-### discardModulesChanges
+### `discardModulesChanges`
 
-This **discards all local changes** including **staged** changes for all **changed sub modules**.
+**discards all local changes** including **staged** changes for all **changed sub modules**.
 
 ```shell
 yarn discardModulesChanges
 ```
 
-### discardModulesCommit
+### `discardModulesCommit`
 
-This **discards all local commits** that have **not been pushed** for all **sub modules adhead**.
+**discards all local commits** that have **not been pushed** for all **sub modules adhead**.
 
 ```shell
 yarn discardModulesCommit
