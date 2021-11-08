@@ -2,19 +2,23 @@
 
 Tools to manage yarn workspace and git modules.
 
-## Modules
+## Install
 
 Add this packge as a dependecy to the root workspace:
 
 `yarn add @mauriora/workspace-tools --dev --ignore-workspace-root-check`
 
-and execute the commands there:
+## Use
+
+Execute the scripts from the root workspace folder:
 
 ```shell
-PS C:\Users\Me\code\MauriOra\Announcements-Bar-Spfx> yarn loadModules shared/workspace-tools
+Users\Me\code\MauriOra\Announcements-Bar-Spfx> yarn loadModules shared/workspace-tools
 ```
 
-- [(`Un`)]($unloadmodules)[`loadModules`](#loadmodules) scripts work on submodules already part of the root module (workspace).
+## Modules
+
+- ([`Un`]($unloadmodules))[`loadModules`](#loadmodules) scripts work on submodules already part of the root module (workspace).
 After (un)loading it will call `yarn install`.
 - `discardModules` ([`Changes`](#discardmoduleschanges)|[`Commit`]($discardmodulescommit)) help for instance when publishing failed.
 
