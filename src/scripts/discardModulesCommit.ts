@@ -29,7 +29,11 @@ const git: SimpleGit = simpleGit();
 const ARE_YOU_SURE: PromptObject = {
     type: 'confirm',
     name: 'sure',
+<<<<<<< Updated upstream
     message: 'Are you sure want to discard the commit and changes in the above sub modules ?',
+=======
+    message: 'Are you sure want to discard the changes in all sub modules ?',
+>>>>>>> Stashed changes
     initial: false
 };
 
@@ -82,8 +86,14 @@ const main = async () => {
         if (areYou.sure) {
             try {
                 for (const folder of modified.modules) {
+<<<<<<< Updated upstream
                     await resetModule(folder);
                 }
+=======
+                    resetModule(folder);
+                }
+
+>>>>>>> Stashed changes
             } catch (unforcedError) {
                 console.error(`${chalk.redBright((unforcedError as Error).message ?? unforcedError)}`);
             }
