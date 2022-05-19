@@ -2,6 +2,15 @@
 
 Tools to manage yarn workspace and git modules.
 
+- [Install](#install)
+- [Use](#use)
+- [Modules](#modules)
+  - [`loadModules`](#loadmodules)
+  - [`unloadModules`](#unloadmodules)
+  - [`discardModulesChanges`](#discardmoduleschanges)
+  - [`discardModulesCommit`](#discardmodulescommit)
+- [Publish](#publish)
+
 ## Install
 
 Add this packge as a dependecy to the root workspace:
