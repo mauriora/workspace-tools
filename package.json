@@ -3,7 +3,6 @@
   "description": "Tools to manage yarn workspace and git modules.",
   "version": "0.0.4",
   "license": "MIT",
-  "private": false,
   "author": {
     "name": "Mauri-Ora",
     "email": "dennis.kuhn@kuhn.geek.co.nz"
@@ -21,9 +20,8 @@
     "./bin",
     "./src"
   ],
-  "scripts": {},
   "dependencies": {
-    "@mauriora/package-tools": "^0.0.5",
+    "@mauriora/package-tools": "^0.0.10",
     "@sinclair/typebox": "^0.20.5",
     "@types/minimist": "^1.2.2",
     "@types/node": "^14.0.0",
