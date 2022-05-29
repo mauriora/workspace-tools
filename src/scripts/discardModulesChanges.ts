@@ -1,10 +1,8 @@
+import { ajvConsoleLogger, getArgs, isOptions } from '@mauriora/minimist-better-ajv-errors-cli';
+import { Static, Type } from '@sinclair/typebox';
 import chalk from 'chalk';
-import { getArgs } from '../shared/args/clit';
-import { Static, Type, } from '@sinclair/typebox';
-import { isOptions } from '../shared/args/IsOptions';
-import { ajvConsoleLogger } from '../shared/args/AjvLogger';
-import simpleGit, { SimpleGit } from 'simple-git';
 import prompts, { PromptObject } from 'prompts';
+import simpleGit, { SimpleGit } from 'simple-git';
 
 const ArgsSchema = Type.Object(
     {
