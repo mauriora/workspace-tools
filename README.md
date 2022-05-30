@@ -82,8 +82,8 @@ yarn discardModulesCommit
 
 ## Publish
 
-~~To publish a new version of this module, in this folder execute:~~
+To publish a new version of this module, in this folder execute:
 
 ```shell
-~~yarn publish --access public~~
+    yarn npm publish --access public
 ```
