@@ -1,7 +1,7 @@
 {
   "name": "@mauriora/workspace-tools",
   "description": "Tools to manage yarn workspace and git modules.",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "license": "MIT",
   "author": {
     "name": "Mauri-Ora",
@@ -35,7 +35,7 @@
     "prompts": "^2.4.2",
     "simple-git": "^3.7.1",
     "ts-node": "^10.8.0",
-    "typescript": "~4.2.4"
+    "typescript": "~4.5.5"
   },
   "devDependencies": {
     "@types/prompts": "^2.4.0",
