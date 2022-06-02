@@ -2,6 +2,11 @@
 
 Tools to manage yarn workspace and git modules.
 
+> This is part of the [hybrid repro MVC SharePoint example implementation](https://github.com/mauriora/reusable-hybrid-repo-mvc-spfx-examples)
+
+## Table of content
+
+- [Table of content](#table-of-content)
 - [Install](#install)
 - [Use](#use)
 - [Modules](#modules)
@@ -80,5 +85,5 @@ yarn discardModulesCommit
 To publish a new version of this module, in this folder execute:
 
 ```shell
-yarn publish --access public
+    yarn npm publish --access public
 ```
