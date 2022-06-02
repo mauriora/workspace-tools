@@ -1,7 +1,7 @@
 {
   "name": "@mauriora/workspace-tools",
   "description": "Tools to manage yarn workspace and git modules.",
-  "version": "0.2.3",
+  "version": "0.2.4",
   "license": "MIT",
   "author": {
     "name": "Mauri-Ora",
@@ -22,7 +22,7 @@
   ],
   "dependencies": {
     "@mauriora/minimist-better-ajv-errors-cli": "workspace:^",
-    "@mauriora/package-tools": "^0.1.1",
+    "@mauriora/package-tools": "^0.1.2",
     "@sinclair/typebox": "^0.23.5",
     "@types/minimist": "^1.2.2",
     "@types/node": "^14.18.20",
